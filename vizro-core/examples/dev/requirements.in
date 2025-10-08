@@ -2,3 +2,5 @@
 gunicorn
 openpyxl
 vizro==0.1.37
+Werkzeug>=3.0.0,<3.1
+requests==2.32.4
