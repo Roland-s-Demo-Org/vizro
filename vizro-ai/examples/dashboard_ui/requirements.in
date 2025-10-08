@@ -2,6 +2,9 @@ gunicorn
 vizro-ai==0.3.5 # temprarory pin before the Pycafe/pyodide can accept Pydantic 2.7.4 and above (currently only 2.7.0 is supported)
 vizro==0.1.28
 black
-openpyxl
+langchain-core==0.2.43
 langchain_anthropic
 langchain_mistralai
+requests==2.32.4
+openpyxl
+werkzeug>=3.0.0,<3.1
