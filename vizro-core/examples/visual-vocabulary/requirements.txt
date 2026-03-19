@@ -103,8 +103,10 @@ requests==2.32.4
     #   dash
 retrying==1.3.4
     # via dash
-setuptools==75.3.0
-    # via dash
+setuptools==78.1.1
+    # via
+    #   -r requirements.in
+    #   dash
 six==1.16.0
     # via
     #   python-dateutil
