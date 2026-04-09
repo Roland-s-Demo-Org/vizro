@@ -73,7 +73,7 @@ jobs:
             echo 'PYPI_TOKEN=${{ secrets.VIZRO_MCP_PYPI_TOKEN }}' >> $GITHUB_ENV
           fi
       - name: Publish distribution 📦 to PyPI
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # release/v1
         with:
           packages-dir: ${{ needs.check-version.outputs.package_name }}/dist
           password: ${{ env.PYPI_TOKEN }}
