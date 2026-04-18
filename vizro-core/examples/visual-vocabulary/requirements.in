@@ -6,4 +6,5 @@ plotly==6.0.0
 vizro==0.1.37
 gunicorn
 requests==2.32.4
-Werkzeug>=3.0.0,<3.1
+Werkzeug>=3.0,<3.1
+setuptools==78.1.1
