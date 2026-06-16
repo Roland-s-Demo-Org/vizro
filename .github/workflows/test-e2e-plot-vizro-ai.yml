@@ -142,9 +142,10 @@ jobs:
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           VIZRO_TYPE: local
 
+      # Pin third-party GitHub Actions to commit SHA to mitigate supply chain attacks
       - name: Send custom JSON data to Slack
         id: slack
-        uses: slackapi/slack-github-action@v2.1.0
+        uses: slackapi/slack-github-action@b0fa283ad8fea605de13dc3f449259339835fc52 # v2.1.0
         if: failure()
         with:
           payload: |
