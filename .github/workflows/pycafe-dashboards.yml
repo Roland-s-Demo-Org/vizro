@@ -1,10 +1,7 @@
 name: PyCafe Playground Links
 
 on:
-  workflow_run:
-    workflows: [Build]
-    types:
-      - completed
+  workflow_dispatch:
 
 defaults:
   run:
