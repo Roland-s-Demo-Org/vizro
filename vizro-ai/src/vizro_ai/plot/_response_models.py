@@ -107,9 +107,10 @@ def _test_execute_chart_code(data_frame: pd.DataFrame):
                 f"Produced code execution failed the following error: <{e}>. Please check the code and try again, "
                 f"alternatively try with a more powerful model."
             )
-        assert isinstance(fig, go.Figure), (
-            f"Expected chart code to return a plotly go.Figure object, but got {type(fig)}"
-        )
+        if not isinstance(fig, go.Figure):
+            raise AssertionError(
+                f"Expected chart code to return a plotly go.Figure object, but got {type(fig)}"
+            )
         return v
 
     return validator_code
