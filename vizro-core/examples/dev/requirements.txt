@@ -10,7 +10,7 @@ blinker==1.8.2
     # via flask
 cachelib==0.9.0
     # via flask-caching
-certifi==2024.8.30
+certifi==2026.10.18
     # via requests
 charset-normalizer==3.4.0
     # via requests
@@ -44,7 +44,7 @@ flask==3.0.3
     #   flask-caching
 flask-caching==2.3.0
     # via vizro
-gunicorn==23.0.0
+gunicorn==26.0.0
     # via -r requirements.in
 idna==3.10
     # via requests
@@ -111,7 +111,7 @@ typing-extensions==4.12.2
     #   pydantic-core
 tzdata==2024.2
     # via pandas
-urllib3==2.2.3
+urllib3==2.8.0
     # via requests
 vizro==0.1.37
     # via -r requirements.in
