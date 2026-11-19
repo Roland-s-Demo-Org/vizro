@@ -25,7 +25,7 @@ dynamic = ["version"]
 license-files = {paths = ["LICENSE.txt"]}
 name = "vizro-mcp"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 
 [project.scripts]
 "vizro-mcp" = "vizro_mcp:main"
